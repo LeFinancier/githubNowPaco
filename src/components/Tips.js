@@ -1,9 +1,12 @@
 import React from 'react';
 import {Divider, List, Card} from 'antd';
 
+
+
 const data = [
   {
-    title: 'Tips de etiqueta generales y otros medio obscuros que descubrimos a las malas',
+    title: `Tips de etiqueta generales`,
+    body12: '...y otros medio obscuros que descubrimos a las malas',
     body1: 'Las muestras de afecto en público son poco comunes y algo mal vistas. Tomarse de la mano y los abrazos están bien, sin embargo los besos largos y demás muestras de “sobre-afecto” puede ser algo escandaloso para los locales (aunque hay unos moteles temáticos muy limpios para seguirle).',
     body2: 'Ciertos bares tradicionales, como nuestras cantinas del centro, son extraoficialmente solo para los locales (estas son fáciles de identificar por estar llenas de hombres de mediana edad con cara de agotamiento laboral). Nadie les impedirá el paso, pero la vibra da a entender que uno no tiene nada que hacer ahí.',
     body3: 'El contacto visual muy intenso no es costumbre; lugar perfecto para los introvertidos.',
@@ -30,6 +33,7 @@ const Tips = () => {
         renderItem={item => (
           <List.Item>
             <Card title={item.title}>
+                <p><b>{item.body12}</b></p>
                 <p>{item.body1}</p>
                 <p>{item.body2}</p>
                 <p>{item.body3}</p>

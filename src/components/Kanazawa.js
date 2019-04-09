@@ -47,7 +47,7 @@ class Kanazawa extends Component {
     }
   }
   getClima = () => {
-    axios.get('http://api.openweathermap.org/data/2.5/weather?id=1857470&&appid=a6d58b64c7e5b013d9a80f62f31d2abc')
+    axios.get('https://api.openweathermap.org/data/2.5/weather?id=1857470&&appid=a6d58b64c7e5b013d9a80f62f31d2abc')
       .then(response => {
         this.setState({
           clima: response.data
@@ -61,7 +61,7 @@ class Kanazawa extends Component {
 
   render () {
     const clima = this.state.clima
-    const icon = `http://openweathermap.org/img/w/${clima.weather[0].icon}.png`
+    const icon = `https://openweathermap.org/img/w/${clima.weather[0].icon}.png`
 
     return (
       <div>
@@ -246,7 +246,7 @@ class Kanazawa extends Component {
         <Divider/>
         
         <h1 id='transporteKanazawa'>Camiones</h1>
-        <img src="https://www.gojiakhong.com/wp-content/uploads/2018/05/Kanazawa_sightseeing_bus-1024x726.jpg" alt="Bus"/>
+        <img src="https://www.gojiakhong.com/wp-content/uploads/2018/05/Kanazawa_sightseeing_bus-1024x726.jpg" alt="Bus" style={{width:'100%'}}/>
         
         
 

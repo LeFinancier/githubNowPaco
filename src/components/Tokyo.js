@@ -48,7 +48,7 @@ class Tokyo extends Component {
   }
 
   getClima = () => {
-    axios.get('http://api.openweathermap.org/data/2.5/weather?id=1850147&&appid=a6d58b64c7e5b013d9a80f62f31d2abc')
+    axios.get('https://api.openweathermap.org/data/2.5/weather?id=1850147&&appid=a6d58b64c7e5b013d9a80f62f31d2abc')
       .then(response => {
         this.setState({
           clima: response.data
@@ -62,7 +62,7 @@ class Tokyo extends Component {
 
   render () {
     const clima = this.state.clima
-    const icon = `http://openweathermap.org/img/w/${clima.weather[0].icon}.png`
+    const icon = `https://openweathermap.org/img/w/${clima.weather[0].icon}.png`
 
     return (
       <div>
