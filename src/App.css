@@ -31,3 +31,15 @@
     transform: rotate(360deg);
   }
 }
+
+.slide {
+  background-position-y: -20em;
+}
+
+.climaPadre {
+  text-align: center !important
+}
+
+.clima {
+  display: inline-block
+}
